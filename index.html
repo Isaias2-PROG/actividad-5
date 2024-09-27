@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripciones Abiertas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Inscripciones Abiertas</h1>
+    <p>Porfavor Ingrese los siguientes datos que se muestran a continuacion</p>
+    <form action="#" method="post">
+    <fieldset>
+        <label for="nombre del alumno"> ingrese su nombre: 
+            <input type="text" id="nombre del alumno" name="nombre del alumno" required>
+        </label>
+        <label for="correo"> Correo electronico: 
+            <input type="text" id="correo" name="correo" required>
+        </label>
+        <fieldset>
+        <label for="referencia">diganos a que nivel escolar se encuentra:
+            <select name="referencia" id="referencia">
+                <option value="">Selecciona una opcion</option>
+                <option value="1">Primaria</option>
+                <option value="2">Secundaria</option>
+                <option value="3">Universitario</option>
+                <option value="4">otro</option>
+            </select>
+        </fieldset>
+        </label>
+        <label for="acta de nacimiento"> Acta de nacimiento del alumno: 
+            <input type="text" name="acta de macimiento" id="acta de nacimiento" required>
+        </label>
+        <label for="CURP"> CURP del alumno:
+            <input type="text" name="CURP" name="CURP" required>
+        </label>
+        <label for="carrera(libre de escoger)"> Porfavor ingrese la carrera que prefiere estudiar:
+            <input type="text" name="carrera" name="carrera" required>
+        </label>
+        <label for="numero de telefono"> escriba el numero del tutor/a o el del alumno: 
+            <input type="text" name="telefono" name="telefono">
+        </label>
+        <fieldset>
+            <label for="referencia">¿Que fue lo que te llamo la atencion sobre nuestro instituto?:
+                <select name="referencia" id="referencia">
+                    <option value="">Selecciona una opcion</option>
+                    <option value="1">PRECIO</option>
+                    <option value="2">RECOMENDACIONES</option>
+                    <option value="3">CPMUIADAD</option>
+                    <option value="4">otro</option>
+                </select>
+            </fieldset>
+        <fieldset>
+            <legend>area de estudios (requerido)</legend>
+            <label for="fisico">
+                <input type="radio" name="area" class="enlinea" checked>fisico
+            </label>
+            <label for="mental">
+                <input type="radio" name="area" class="enlinea" >mental
+            </label>
+            <label for="escrito">
+                <input type="radio" name="area" class="enlinea" >escrito
+            </label>
+            <label for="hablado">
+                <input type="radio" name="area" class="enlinea" >hablado
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend> el alumno porta algun tipo de enfermedad  (requerido)</legend>
+            <label for="si">
+                <input type="radio" name="opcion" class="enlinea" checked>si
+            </label>
+            <label for="no">
+                <input type="radio" name="opcion" class="enlinea" >no
+            </label>
+            <label for="describala"> Porfavor ¿podria describirla?:
+                <input type="text" name="describala" id="describala" requerid>
+            </label>
+        </fieldset>
+    </fieldset>
+    <fieldset>
+        <legend>genero del alumno (requerido)</legend>
+        <label for="niña">
+            <input type="radio" name="genero" class="enlinea" checked>niña
+        </label>
+        <label for="niño">
+            <input type="radio" name="genero" class="enlinea" >niño
+        </label>
+    </fieldset>
+    <fieldset>
+        <label for="edad">Ingrese la edad del alumno:
+            <input type="number" name="edad" min="10" max="23">
+        </label>
+        <label for="referencia">¿Como supiste de nuestro instituto?
+            <select name="referencia" id="referencia">
+                <option value="">Selecciona una opcion</option>
+                <option value="1">Facebook</option>
+                <option value="2">Instagram</option>
+                <option value="3">Google</option>
+                <option value="4">otro</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>¿recomendaria nuestros aprendizajes a alguien mas? (opcional)</legend>
+        <label for="definitvamente">
+            <input type="radio" name="decision" class="enlinea" checked>definitvamente
+        </label>
+        <label for="tal vez">
+            <input type="radio" name="decision" class="enlinea" >tal vez
+        </label>
+        <label for="lamentablemente no">
+            <input type="radio" name="decision" class="enlinea" >lamentablemente no
+        </label>
+    </fieldset>
+    </fieldset>
+        <label for="mensaje">Ingrese una reseña sobre los gustos comunes del alumno: 
+            <textarea name="mensaje" id="mensaje" rows="3" cols="30" placeholder="Mensaje"></textarea>
+        </label>
+        <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
